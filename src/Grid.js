@@ -15,27 +15,36 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
+
+
 export default function CenteredGrid() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={1}>
+      
+       
+      <Grid container spacing={2}>
         
         <Grid item xs={4}>
-          {/*<Paper className={classes.paper}>xs=6</Paper>*/}
+          
           <Card></Card>
         </Grid>
         <Grid item xs={4}>
-          {/*<Paper className={classes.paper}>xs=6</Paper>*/}
+          
           <Card></Card>
         </Grid>
         <Grid item xs={4}>
-          {/*<Paper className={classes.paper}>xs=6</Paper>*/}
+          
           <Card></Card>
         </Grid>
         
       </Grid>
+    
+
+      
     </div>
   );
 }

@@ -1,27 +1,50 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 
 
 const useStyles = makeStyles({
     root: {
-      minWidth: 275,
+      minWidth: '100%',
       width: '25%',
       marginLeft: '5%',
     },
     bullet: {
-      display: 'inline-block',
+      
       margin: '0 2px',
-      transform: 'scale(0.8)',
+      
     },
     title: {
-      fontSize: 14,
+      fontSize: 15,
+      textAlign: "left",
+      marginBottom: 0
     },
     pos: {
-      marginBottom: 12,
+      fontSize: 30,
+      marginBottom: 10,
+      textAlign: "left"
     },
+
+    recent: {
+        fontSize: 15,
+        textAlign: "left"
+
+    },
+
+    controls: {
+        display: 'flex',
+        alignItems: 'center',
+        paddingLeft: 1,
+        paddingBottom: 1,
+      },
+
+      text: {
+          width: '80%'
+      }
+
   });
   
   export default function SimpleCard() {
@@ -30,17 +53,21 @@ const useStyles = makeStyles({
     return (
       <Card className={classes.root}>
         <CardContent>
+          <div className = {classes.controls}>
+          <div className = {classes.text}>
           <Typography className={classes.title} color="textSecondary" gutterBottom>
-            Title
+            CASES
           </Typography>
-          <Typography variant="h5" component="h2">
-            Word
+          </div>
+          <LocalHospitalIcon></LocalHospitalIcon>
+          </div>
+
+          <Typography className={classes.pos} color="primary">
+            100,000
           </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            Description
-          </Typography>
-          <Typography variant="body2" component="p">
-            Explanation 
+          
+          <Typography className={classes.recent} variant="body2" component="p" color="textPrimary">
+            2.4% 
           </Typography>
         </CardContent>
         
