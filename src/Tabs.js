@@ -7,6 +7,8 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Card from './card'
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -43,7 +45,8 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 1500,
+    /*width: 1500,*/
+    flex: 1
   },
 }));
 
@@ -82,7 +85,9 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          Content #1
+
+          
+          <Card></Card>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
           Content #2
