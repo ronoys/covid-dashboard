@@ -45,6 +45,7 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
+    
     /*width: 1500,*/
     flex: 1
   },
@@ -86,9 +87,11 @@ export default function FullWidthTabs() {
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
         <CenteredGrid></CenteredGrid>
+        
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
           Content #2
+          
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
           Content #3

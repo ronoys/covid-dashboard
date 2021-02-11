@@ -2,21 +2,25 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 //import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import Card from './card'
+
+import Active from './cards/activecases'
+import Hospitalizations from './cards/hospitalizations'
+import Recov from './cards/recoveries'
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    paddingRight: '5%',
+    paddingLeft: '2%'
+    
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+
   },
 }));
-
-
-
 
 
 export default function CenteredGrid() {
@@ -30,15 +34,17 @@ export default function CenteredGrid() {
         
         <Grid item xs={4}>
           
-          <Card></Card>
+          <Active></Active>
+
+
         </Grid>
         <Grid item xs={4}>
           
-          <Card></Card>
+          <Hospitalizations></Hospitalizations>
         </Grid>
         <Grid item xs={4}>
           
-          <Card></Card>
+          <Recov></Recov>
         </Grid>
         
       </Grid>
