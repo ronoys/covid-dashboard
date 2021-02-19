@@ -10,6 +10,7 @@ import Box from '@material-ui/core/Box';
 import CenteredGrid from './updatesGrid'
 import Sales from './chart'
 
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -87,6 +88,7 @@ export default function FullWidthTabs() {
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
         <CenteredGrid></CenteredGrid>
+        
         
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>

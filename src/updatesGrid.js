@@ -7,11 +7,15 @@ import Active from './cards/activecases'
 import Hospitalizations from './cards/hospitalizations'
 import Recov from './cards/recoveries'
 
+import BasicTable from './cards/table'
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     paddingRight: '5%',
-    paddingLeft: '2%'
+    paddingLeft: '2%',
+    paddingBottom: '2%'
     
   },
   paper: {
@@ -20,6 +24,13 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
 
   },
+
+  basicTableRoot: {
+    paddingLeft: '1.85%',
+    paddingTop: '2%',
+    paddingRight: '5%'
+
+  }
 }));
 
 
@@ -48,7 +59,9 @@ export default function CenteredGrid() {
         </Grid>
         
       </Grid>
-    
+      <div className = {classes.basicTableRoot}>
+      <BasicTable></BasicTable>
+      </div>
 
       
     </div>
