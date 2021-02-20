@@ -9,7 +9,6 @@ import Recov from './cards/recoveries'
 
 import BasicTable from './cards/table'
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,

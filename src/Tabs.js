@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import CenteredGrid from './updatesGrid'
 import Sales from './chart'
-
+import Today from './liveupdateTest'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -96,7 +96,7 @@ export default function FullWidthTabs() {
           
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Content #3
+          <Today></Today>
         </TabPanel>
       </SwipeableViews>
     </div>
