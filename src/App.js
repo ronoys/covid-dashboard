@@ -2,6 +2,7 @@ import './App.css';
 import './Tabs'
 import FullWidthTabs from './Tabs';
 import React from 'react';
+// import myComponent from './mainViews/casesAPI'
 
 class App extends React.Component {
   render() {
@@ -11,12 +12,16 @@ class App extends React.Component {
       <p>COVID-19 Dashboard</p>
       
       
+      
       <div className="App-header">
       
       <FullWidthTabs></FullWidthTabs>
+
+      
+      
       
     </div>
-
+    
       
     </div>
   );

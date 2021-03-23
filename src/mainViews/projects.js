@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
@@ -42,6 +43,8 @@ export default function ProjectButtons() {
         <Button variant="outlined" color="primary" className = {classes.indivelement}>
           Project 4
         </Button>
+
+        
         
       </div>
     );
