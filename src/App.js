@@ -1,9 +1,10 @@
 import './App.css';
 import './Tabs'
 import FullWidthTabs from './Tabs';
+import React from 'react';
 
-
-function App() {
+class App extends React.Component {
+  render() {
   return (
     <div className="App">
       
@@ -20,5 +21,5 @@ function App() {
     </div>
   );
 }
-
+}
 export default App;
