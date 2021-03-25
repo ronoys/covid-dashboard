@@ -13,6 +13,7 @@ import {
 } from '@material-ui/core';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowUpward';
 import LocalHospital from '@material-ui/icons/BarChart';
+import Test123 from './casesAPI';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -74,7 +75,8 @@ const Active = ({ className, ...rest }) => {
               color="textPrimary"
               variant="h3"
             >
-              94,893
+              {/* 94,893 */}
+              <Test123></Test123>
             </Typography>
           </Grid>
           <Grid item>

@@ -37,7 +37,7 @@ function MyComponent() {
         
         
           <p>
-            {items.updated} {items.cases}
+            {items.active}
           </p>
         
       </ul>
@@ -53,5 +53,4 @@ export default function Test123() {
     </div>
   );
 }
-
     
