@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
+
 import {
   Avatar,
   Box,
@@ -13,6 +14,7 @@ import {
 } from '@material-ui/core';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import LocalHospital from '@material-ui/icons/LocalHospital';
+import Test123 from './hospitalizationsAPI';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,7 +65,7 @@ const Hospitalizations = ({ className, ...rest }) => {
               gutterBottom
               variant="h6"
             >
-              HOSPITALIZATIONS
+              CRITICAL CASES
             </Typography>
 
             </div>
@@ -72,7 +74,7 @@ const Hospitalizations = ({ className, ...rest }) => {
               color="textPrimary"
               variant="h3"
             >
-              8,694
+              <Test123></Test123>
             </Typography>
           </Grid>
           <Grid item>

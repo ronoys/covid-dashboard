@@ -31,15 +31,13 @@ function MyComponent() {
   } else if (!isLoaded) {
     return <div>Loading...</div>;
   } else {
-    
-
     return (
       <ul>
 
         
         
           <p>
-            {items.active.toLocaleString()}
+            {items.critical.toLocaleString()}
           </p>
         
       </ul>

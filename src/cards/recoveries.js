@@ -13,6 +13,7 @@ import {
 } from '@material-ui/core';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowUpward';
 import LocalHospital from '@material-ui/icons/Loop';
+import Test123 from './recoveriesAPI'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -72,8 +73,9 @@ const Recov = ({ className, ...rest }) => {
               color="textPrimary"
               variant="h3"
             >
-              7,481
+              <Test123></Test123>
             </Typography>
+            
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
