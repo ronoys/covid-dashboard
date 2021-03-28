@@ -37,7 +37,7 @@ function MyComponent() {
         
         
           <p>
-            {items.critical.toLocaleString()}
+            {items.critical}
           </p>
         
       </ul>

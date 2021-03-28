@@ -37,7 +37,7 @@ function MyComponent() {
         
         
           <p>
-            {items.todayRecovered.toLocaleString()}
+            {items.todayRecovered}
           </p>
         
       </ul>

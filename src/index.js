@@ -3,6 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import firebase from "firebase/firebase-app";
+
+firebase.initializeApp({
+    apiKey: "AIzaSyBhrJmzErQpqNwwVDNMYY3ZYxQHsRlHOrI",
+    authDomain: "covid-dashboard-bae0a.firebaseapp.com",
+    projectId: "covid-dashboard-bae0a",
+    storageBucket: "covid-dashboard-bae0a.appspot.com",
+    messagingSenderId: "591089561124",
+    appId: "1:591089561124:web:1c09bf234b41c382dff2b1",
+    measurementId: "G-9YNVDF9743"
+})
 
 ReactDOM.render(
   <React.StrictMode>

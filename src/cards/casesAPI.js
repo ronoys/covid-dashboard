@@ -34,12 +34,13 @@ function MyComponent() {
     
 
     return (
+
       <ul>
 
         
         
           <p>
-            {items.active.toLocaleString()}
+            {items.active}
           </p>
         
       </ul>
