@@ -2,10 +2,8 @@ import './App.css';
 import './Tabs'
 import FullWidthTabs from './Tabs';
 import React from 'react';
-import Firebase from "firebase";
 
-export default function App() {
-  const firebaseApp = Firebase.apps[0];
+export default function App() {  
   return (
     <div className="App">
       
@@ -19,6 +17,4 @@ export default function App() {
         
     </div>
   );
-
 }
-
